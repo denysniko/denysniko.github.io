@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>bicycleRent</title>
+		<link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/slick.css" />
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+		<script
+			src="https://kit.fontawesome.com/bec11fab24.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="icons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="icons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="icons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="stylesheet" href="css/style.min.css" />
+	</head>
+	<body>
+		<section class="promo">
+			<div class="container">
+				<header id="header" class="header">
+					<nav class="nav">
+						<a href="#" class="header__logo">
+							<i class="fa-solid fa-person-biking"></i>bicycleRent
+						</a>
+
+						<div class="nav__menu" id="nav-menu">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a href="#benefits" class="nav__link">Переваги</a>
+								</li>
+								<li class="nav__item">
+									<a href="#consultation" class="nav__link">Консультація</a>
+								</li>
+								<li class="nav__item">
+									<a href="#catalog" class="nav__link">Каталог</a>
+								</li>
+								<li class="nav__item">
+									<a href="#reviews" class="nav__link">Відгуки</a>
+								</li>
+								<li class="nav__item">
+									<a href="#contacts" class="nav__link">Контакти</a>
+								</li>
+							</ul>
+
+							<div class="header__contacts">
+								<a href="tel:+380670000000" class="header__phone"
+									>+380 67 000 00 00</a
+								>
+								<button data-modal="call" class="button">
+									Замовити дзвінок
+								</button>
+							</div>
+						</div>
+						<div class="nav__burger">
+							<span></span>
+							<span></span>
+						</div>
+					</nav>
+				</header>
+
+				<div class="promo__wrapper">
+					<h1 class="promo__header">This is the text</h1>
+					<h2 class="promo__subheader">
+						з урахуванням Вашого рівня підготовки
+					</h2>
+
+					<div class="promo__icons">
+						<div class="promo__icon">
+							<i class="fa-solid fa-clock-rotate-left fa-2x"></i>
+							Час підбору: 10 хвилин
+						</div>
+						<div class="promo__icon">
+							<i class="fa-solid fa-truck fa-2x"></i>
+							Безкоштовна доставка
+						</div>
+						<div class="promo__icon">
+							<i class="fa-regular fa-comment fa-2x"></i>
+							Відповімо на всі запитання
+						</div>
+					</div>
+
+					<button class="button button_main">
+						<span>Замовити велосипед</span
+						><i class="fa-solid fa-arrow-right-long"></i>
+					</button>
+					<div class="promo__link">
+						або
+						<a href="#catalog">Перейти до каталогу</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="promo__img">
+				<img src="img/promo_img.png" alt="img-promo" />
+			</div>
+		</section>
+
+		<section id="benefits" class="benefits">
+			<div class="container">
+				<h2 class="title">Наші переваги</h2>
+				<div class="benefits__wrapper">
+					<div class="benefits__item">
+						<div class="benefits__round">
+							<i class="fa-regular fa-face-smile fa-2x"></i>
+						</div>
+						<div class="benefits__subtitle">Ділимося досвідом</div>
+						<div class="benefits__descr">
+							Наші співробітники завжди готові поділитися своїм досвідом у світі
+							велосипедів, оскільки є ентузіастами цього виду активності. Вони
+							активно катаються на велосипедах, відвідують велосипедні марафони
+							та подорожують на двоколісному транспорті по різних місцях.
+						</div>
+					</div>
+					<div class="benefits__item">
+						<div class="benefits__round">
+							<i class="fa-solid fa-house-medical fa-2x"></i>
+						</div>
+						<div class="benefits__subtitle">Широкий вибір велосипедів</div>
+						<div class="benefits__descr">
+							Ми пропонуємо широкий вибір велосипедів різних типів і розмірів,
+							щоб ви могли знайти той, який відповідає вашим потребам і
+							побажанням. Від комфортних міських велосипедів до професійних
+							гірських моделей - у нас є все для вашої велосипедної пригоди!
+						</div>
+					</div>
+					<div class="benefits__item">
+						<div class="benefits__round">
+							<i class="fa-solid fa-bicycle fa-2x"></i>
+						</div>
+						<div class="benefits__subtitle">Гнучка оренда</div>
+						<div class="benefits__descr">
+							Тепер ви можете насолоджуватися велосипедною подорожжю з
+							найзручнішим графіком оренди, що підходить саме вам. Обирайте свій
+							ідеальний велосипед та насолоджуйтесь їздою без обмежень.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="consultation" class="consultation">
+			<div class="container">
+				<h2 class="title title_left">
+					Отримайте безкоштовну консультацію <br />
+					з підбору велосипеда
+				</h2>
+				<div class="consultation__descr">
+					Просто заповніть форму заявки<br />
+					і ми передзвонимо вам протягом 10 хвилин
+				</div>
+				<form class="feed-form" action="#" method="post">
+					<input name="name" type="text" required placeholder="Ваше ім'я" />
+					<input
+						name="phone"
+						type="number"
+						required
+						placeholder="Ваш телефон"
+					/>
+					<input name="email" type="email" required placeholder="Ваш E-mail" />
+
+					<button class="button button_submit">Замовити консультацію</button>
+				</form>
+			</div>
+		</section>
+
+		<section class="carousel">
+			<div class="carousel__inner">
+				<div>
+					<img src="img/slide1.jpg" alt="slide" />
+				</div>
+				<div>
+					<img src="img/slide2.jpg" alt="slide" />
+				</div>
+				<div>
+					<img src="img/slide3.jpg" alt="slide" />
+				</div>
+				<div>
+					<img src="img/slide4.jpg" alt="slide" />
+				</div>
+			</div>
+		</section>
+
+		<section id="catalog" class="catalog">
+			<div class="container">
+				<h2 class="title">Каталог велосипедів</h2>
+				<ul class="catalog__tabs">
+					<li class="catalog__tab catalog__tab_active"><div>Дорожні</div></li>
+					<li class="catalog__tab"><div>Гірські</div></li>
+					<li class="catalog__tab"><div>Шосейні</div></li>
+					<li class="catalog__tab"><div>Трекові</div></li>
+				</ul>
+
+				<div class="catalog__content catalog__content_active">
+					<div class="catalog-item">
+						<div class="catalog-item__wrapper">
+							<div class="catalog-item__content">
+								<img
+									src="img/roadbicycle.jpg"
+									alt="cycle"
+									class="catalog-item__img"
+								/>
+								<div class="catalog-item__subtitle">Велосипед</div>
+								<div class="catalog-item__descr">
+									Велосипед з легкою рамою і швидкими колесами для мандрівок.
+								</div>
+								<a href="#" class="catalog-item__link">Докладніше</a>
+							</div>
+						</div>
+						<hr />
+
+						<div class="catalog-item__footer">
+							<div class="catalog-item__prices">
+								<div class="catalog-item__old-price">499 грн</div>
+								<div class="catalog-item__new-price">399 грн</div>
+							</div>
+							<button class="button button_catalog">Замовити</button>
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="catalog-item__wrapper">
+							<div class="catalog-item__content">
+								<img
+									src="img/roadbicycle2.jpg"
+									alt="cycle"
+									class="catalog-item__img"
+								/>
+								<div class="catalog-item__subtitle">Велосипед</div>
+								<div class="catalog-item__descr">
+									Велосипед з якісними тормозами і системою перемикання
+									швидкостей.
+								</div>
+								<a href="#" class="catalog-item__link">Докладніше</a>
+							</div>
+						</div>
+						<hr />
+
+						<div class="catalog-item__footer">
+							<div class="catalog-item__prices">
+								<div class="catalog-item__old-price">499 грн</div>
+								<div class="catalog-item__new-price">399 грн</div>
+							</div>
+							<button class="button button_catalog">Замовити</button>
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="catalog-item__wrapper">
+							<div class="catalog-item__content">
+								<img
+									src="img/roadbicycle3.jpg"
+									alt="cycle"
+									class="catalog-item__img"
+								/>
+								<div class="catalog-item__subtitle">Велосипед</div>
+								<div class="catalog-item__descr">
+									Легкий велосипед з алюмінієвою рамою і широкими покришками.
+								</div>
+								<a href="#" class="catalog-item__link">Докладніше</a>
+							</div>
+						</div>
+						<hr />
+
+						<div class="catalog-item__footer">
+							<div class="catalog-item__prices">
+								<div class="catalog-item__old-price">499 грн</div>
+								<div class="catalog-item__new-price">399 грн</div>
+							</div>
+							<button class="button button_catalog">Замовити</button>
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="catalog-item__wrapper">
+							<div class="catalog-item__content">
+								<img
+									src="img/roadbicycle4.jpg"
+									alt="cycle"
+									class="catalog-item__img"
+								/>
+								<div class="catalog-item__subtitle">Велосипед</div>
+								<div class="catalog-item__descr">
+									Високоякісний велосипед з комфортним сидінням і аеродинамічною
+									конструкцією.
+								</div>
+								<a href="#" class="catalog-item__link">Докладніше</a>
+							</div>
+						</div>
+						<hr />
+
+						<div class="catalog-item__footer">
+							<div class="catalog-item__prices">
+								<div class="catalog-item__old-price">499 грн</div>
+								<div class="catalog-item__new-price">399 грн</div>
+							</div>
+							<button class="button button_catalog">Замовити</button>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__content">
+					<div class="catalog-item">
+						<div class="catalog-item__wrapper">
+							<div class="catalog-item__content">
+								<img
+									src="img/montainbicycle.jpg"
+									alt="cycle"
+									class="catalog-item__img"
+								/>
+								<div class="catalog-item__subtitle">Велосипед</div>
+								<div class="catalog-item__descr">
+									Легкий велосипед з широкими покришками для різних умов.
+								</div>
+								<a href="#" class="catalog-item__link">Докладніше</a>
+							</div>
+						</div>
+						<hr />
+
+						<div class="catalog-item__footer">
+							<div class="catalog-item__prices">
+								<div class="catalog-item__old-price">499 грн</div>
+								<div class="catalog-item__new-price">399 грн</div>
+							</div>
+							<button class="button button_catalog">Замовити</button>
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="catalog-item__wrapper">
+							<div class="catalog-item__content">
+								<img
+									src="img/montainbicycle2.jpg"
+									alt="cycle"
+									class="catalog-item__img"
+								/>
+								<div class="catalog-item__subtitle">Велосипед</div>
+								<div class="catalog-item__descr">
+									Комфортний велосипед з ефективною системою передач для
+									підйомів.
+								</div>
+								<a href="#" class="catalog-item__link">Докладніше</a>
+							</div>
+						</div>
+						<hr />
+
+						<div class="catalog-item__footer">
+							<div class="catalog-item__prices">
+								<div class="catalog-item__old-price">499 грн</div>
+								<div class="catalog-item__new-price">399 грн</div>
+							</div>
+							<button class="button button_catalog">Замовити</button>
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="catalog-item__wrapper">
+							<div class="catalog-item__content">
+								<img
+									src="img/montainbicycle3.jpg"
+									alt="cycle"
+									class="catalog-item__img"
+								/>
+								<div class="catalog-item__subtitle">Велосипед</div>
+								<div class="catalog-item__descr">
+									З міцною рамою і амортизаційною вилкою для екстремальних трас.
+								</div>
+								<a href="#" class="catalog-item__link">Докладніше</a>
+							</div>
+						</div>
+						<hr />
+
+						<div class="catalog-item__footer">
+							<div class="catalog-item__prices">
+								<div class="catalog-item__old-price">499 грн</div>
+								<div class="catalog-item__new-price">399 грн</div>
+							</div>
+							<button class="button button_catalog">Замовити</button>
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="catalog-item__wrapper">
+							<div class="catalog-item__content">
+								<img
+									src="img/montainbicycle4.jpg"
+									alt="cycle"
+									class="catalog-item__img"
+								/>
+								<div class="catalog-item__subtitle">Велосипед</div>
+								<div class="catalog-item__descr">
+									Високоякісний гірський велосипед з гідними гідравлічними
+									гальмами.
+								</div>
+								<a href="#" class="catalog-item__link">Докладніше</a>
+							</div>
+						</div>
+						<hr />
+
+						<div class="catalog-item__footer">
+							<div class="catalog-item__prices">
+								<div class="catalog-item__old-price">499 грн</div>
+								<div class="catalog-item__new-price">399 грн</div>
+							</div>
+							<button class="button button_catalog">Замовити</button>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__content">
+					<div class="catalog-item">
+						<div class="catalog-item__wrapper">
+							<div class="catalog-item__content">
+								<img
+									src="img/highwaybicycle.jpg"
+									alt="cycle"
+									class="catalog-item__img"
+								/>
+								<div class="catalog-item__subtitle">Велосипед</div>
+								<div class="catalog-item__descr">
+									Елегантний велосипед з аеродинамічною формою для максимальної
+									швидкості.
+								</div>
+								<a href="#" class="catalog-item__link">Докладніше</a>
+							</div>
+						</div>
+						<hr />
+
+						<div class="catalog-item__footer">
+							<div class="catalog-item__prices">
+								<div class="catalog-item__old-price">599 грн</div>
+								<div class="catalog-item__new-price">499 грн</div>
+							</div>
+							<button class="button button_catalog">Замовити</button>
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="catalog-item__wrapper">
+							<div class="catalog-item__content">
+								<img
+									src="img/highwaybicycle2.jpg"
+									alt="cycle"
+									class="catalog-item__img"
+								/>
+								<div class="catalog-item__subtitle">Велосипед</div>
+								<div class="catalog-item__descr">
+									Легкий шосейний велосипед з алюмінієвою рамою і швидкими
+									колесами.
+								</div>
+								<a href="#" class="catalog-item__link">Докладніше</a>
+							</div>
+						</div>
+						<hr />
+
+						<div class="catalog-item__footer">
+							<div class="catalog-item__prices">
+								<div class="catalog-item__old-price">599 грн</div>
+								<div class="catalog-item__new-price">499 грн</div>
+							</div>
+							<button class="button button_catalog">Замовити</button>
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="catalog-item__wrapper">
+							<div class="catalog-item__content">
+								<img
+									src="img/highwaybicycle3.jpg"
+									alt="cycle"
+									class="catalog-item__img"
+								/>
+								<div class="catalog-item__subtitle">Велосипед</div>
+								<div class="catalog-item__descr">
+									Комфортний шосейний велосипед зі спортивним геометричним
+									дизайном.
+								</div>
+								<a href="#" class="catalog-item__link">Докладніше</a>
+							</div>
+						</div>
+						<hr />
+
+						<div class="catalog-item__footer">
+							<div class="catalog-item__prices">
+								<div class="catalog-item__old-price">599 грн</div>
+								<div class="catalog-item__new-price">499 грн</div>
+							</div>
+							<button class="button button_catalog">Замовити</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="reviews" class="reviews">
+			<div class="container swiper">
+				<h2 class="title">Відгуки</h2>
+				<div class="reviews__wrapper swiper-wrapper">
+					<div class="reviews__card swiper-slide">
+						<div class="reviews__shape reviews__shape_small"></div>
+
+						<i class="fa-regular fa-comment fa-2x"></i>
+						<div class="reviews__subtitle">Ігор</div>
+						<div class="reviews__descr">
+							Я орендував у них велосипед на вихідні і був дуже задоволений
+							сервісом. Велосипед був чистий і добре підготовлений до поїздки.
+							Рекомендую цю компанію для оренди велосипедів!
+						</div>
+					</div>
+					<div class="reviews__card swiper-slide">
+						<div class="reviews__shape reviews__shape_small"></div>
+
+						<i class="fa-regular fa-comment fa-2x"></i>
+						<div class="reviews__subtitle">Олександр</div>
+						<div class="reviews__descr">
+							Мені сподобався вибір велосипедів у цій компанії. Вони пропонують
+							різні моделі для будь-яких потреб. Я орендував гірський велосипед
+							і пройшов чудові місцеві маршрути. Все було просто чудово!
+						</div>
+					</div>
+					<div class="reviews__card swiper-slide">
+						<div class="reviews__shape reviews__shape_small"></div>
+
+						<i class="fa-regular fa-comment fa-2x"></i>
+						<div class="reviews__subtitle">Єва</div>
+						<div class="reviews__descr">
+							Дуже задоволена гнучкими термінами оренди. Мені було важливо мати
+							велосипед на весь тиждень, і ця компанія дозволила мені зробити це
+							за доступною ціною. Велосипед був у хорошому стані.
+						</div>
+					</div>
+					<div class="reviews__card swiper-slide">
+						<div class="reviews__shape reviews__shape_small"></div>
+
+						<i class="fa-regular fa-comment fa-2x"></i>
+						<div class="reviews__subtitle">Карина</div>
+						<div class="reviews__descr">
+							Команда дуже привітна і допомагає з усіма питаннями. Я отримала
+							вичерпні поради про те, який велосипед обрати в залежності від
+							моїх потреб. Під час оренди не виникло жодних проблем. Дякую!
+						</div>
+					</div>
+					<div class="reviews__card swiper-slide">
+						<div class="reviews__shape reviews__shape_small"></div>
+
+						<i class="fa-regular fa-comment fa-2x"></i>
+						<div class="reviews__subtitle">Євгеній</div>
+						<div class="reviews__descr">
+							Це була моя перша оренда велосипеда, і все пройшло дуже гладко.
+							Велосипед був доставлений до мого готелю вчасно і був належним
+							чином налаштований. Рекомендую цю послугу!
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+
+		<section id="contacts" class="contacts">
+			<div class="container">
+				<h2 class="title">Контакти</h2>
+				<div class="contacts__wrapper">
+					<div class="contacts__content">
+						<div class="contacts__left">
+							Бажаєте за кілька хвилин орендувати
+							<br />
+							велосипед? Заповнюйте форму, <br />
+							ми зв'яжемося з
+							<span>вами</span>
+						</div>
+						<div class="contacts__right">
+							<form class="feed-form feed-form__contacts">
+								<div class="feed-form__contacts_first-row">
+									<input
+										name="name"
+										type="text"
+										placeholder="Ваше ім'я"
+										required
+									/>
+								</div>
+								<div class="feed-form__contacts_second-row">
+									<input
+										name="phone"
+										type="number"
+										placeholder="Ваш телефон "
+										required
+									/>
+								</div>
+								<div class="feed-form__contacts_third-row">
+									<input
+										name="email"
+										type="email"
+										placeholder="Ваш E-mail"
+										required
+									/>
+								</div>
+								<button class="button button_contacts">Залишити заявку</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer-content">
+						<a href="#" class="footer-content__logo">
+							<i class="fa-solid fa-person-biking"></i>bicycleRent
+						</a>
+						<div class="footer-content__subtitle">
+							Взяв, покатався, повернув.
+						</div>
+						<div class="footer-content__phone">
+							<i class="fa-solid fa-phone"></i>+ 380 00 000 00 00
+						</div>
+						<div class="footer-content__email">
+							<i class="fa-solid fa-envelope"></i>hello@bicycleRent.com
+						</div>
+					</div>
+					<div class="footer-content__right">
+						<ul class="footer-content__links">
+							<li>
+								<a href="#benefits" class="footer-content__link">Переваги</a>
+							</li>
+							<li>
+								<a href="#consultation" class="footer-content__link"
+									>Консультація</a
+								>
+							</li>
+							<li>
+								<a href="#catalog" class="footer-content__link">Каталог</a>
+							</li>
+							<li>
+								<a href="#reviews" class="footer-content__link">Відгуки</a>
+							</li>
+							<li>
+								<a href="#contacts" class="footer-content__link">Контакти</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-content__bottom">
+						<hr />
+						<div class="footer-content__info">
+							<p>©2024</p>
+							<div class="footer-content__social">
+								<ul>
+									<li>
+										<a href="#"><i class="fa-brands fa-instagram"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="overlay">
+			<div id="call" class="modal modal_call">
+				<div class="modal__close">
+					<span></span>
+					<span></span>
+				</div>
+				<div class="modal__subtitle modal__subtitle_call">
+					Бажаєте замовити дзвінок?
+				</div>
+				<div class="modal__descr">Заповніть форму, ми зв'яжемося з вами</div>
+				<form class="feed-form" action="#" method="post">
+					<input name="name" type="text" required placeholder="Ваше ім'я" />
+					<input
+						name="phone"
+						type="number"
+						required
+						placeholder="Ваш телефон"
+					/>
+					<input name="email" type="email" required placeholder="Ваш E-mail" />
+
+					<button class="button button_submit">Замовити дзвінок</button>
+				</form>
+			</div>
+
+			<div id="order" class="modal">
+				<div class="modal__close">
+					<span></span>
+					<span></span>
+				</div>
+				<div class="modal__subtitle">Ваше замовлення:</div>
+				<div class="modal__descr">Велосипед</div>
+				<form class="feed-form" action="#" method="post">
+					<input name="name" type="text" required placeholder="Ваше ім'я" />
+					<input
+						name="phone"
+						type="number"
+						required
+						placeholder="Ваш телефон"
+					/>
+					<input name="email" type="email" required placeholder="Ваш E-mail" />
+
+					<button class="button button_submit">Замовити</button>
+				</form>
+			</div>
+
+			<div id="thanks" class="modal modal_mini">
+				<div class="modal__close">
+					<span></span>
+					<span></span>
+				</div>
+				<div class="modal__subtitle">Дякуємо за ваше замовлення!</div>
+				<div class="modal__descr">
+					Наш менеджер зв'яжеться з вами, щоб підтвердити замовлення.
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+		<script src="js/script.js"></script>
+		<script>
+			gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, TextPlugin)
+
+			document.querySelectorAll('nav a').forEach(navItem => {
+				navItem.addEventListener('click', function (e) {
+					e.preventDefault()
+
+					let getID = this.getAttribute('href')
+					let scrollSection = document.querySelector(getID)
+
+					gsap.to(window, {
+						duration: 1,
+						scrollTo: { y: scrollSection, offsetY: 100 },
+					})
+				})
+			})
+
+			gsap.to('.promo__header', {
+				duration: 2,
+				text: 'Оренда велосипедів',
+				ease: 'none',
+			})
+
+			gsap.from('.promo__img', {
+				opacity: 0,
+				x: 50,
+				scrollTrigger: {
+					opacity: 1,
+					x: 0,
+					duration: 3,
+					trigger: '.promo__img',
+					start: 'top 85%',
+					toggleActions: 'play none none',
+				},
+			})
+
+			gsap.from('.benefits__item', {
+				opacity: 0,
+				y: 50,
+				scrollTrigger: {
+					opacity: 1,
+					y: 0,
+					duration: 2,
+					trigger: '.benefits__item',
+					start: 'top 85%',
+					toggleActions: 'play none none',
+				},
+			})
+			gsap.from('.consultation', {
+				opacity: 0,
+				y: 50,
+				scrollTrigger: {
+					opacity: 1,
+					y: 0,
+					duration: 2,
+					trigger: '.consultation',
+					start: 'top 85%',
+					toggleActions: 'play none none',
+				},
+			})
+			gsap.from('.catalog-item', {
+				opacity: 0,
+				y: 50,
+				scrollTrigger: {
+					opacity: 1,
+					y: 0,
+					duration: 2,
+					trigger: '.catalog-item',
+					start: 'top 85%',
+					toggleActions: 'play none none',
+				},
+			})
+			gsap.from('.contacts__content', {
+				opacity: 0,
+				y: 50,
+				scrollTrigger: {
+					opacity: 1,
+					y: 0,
+					duration: 2,
+					trigger: '.contacts__content',
+					start: 'top 85%',
+					toggleActions: 'play none none',
+				},
+			})
+			gsap.from('.footer', {
+				opacity: 0,
+				y: 50,
+				scrollTrigger: {
+					opacity: 1,
+					y: 0,
+					duration: 2,
+					trigger: '.footer',
+					start: 'top 85%',
+					toggleActions: 'play none none',
+				},
+			})
+
+			gsap.from('.benefits__round', {
+				scrollTrigger: {
+					trigger: '.benefits__round',
+					start: 'top 80%',
+					scrub: 2,
+				},
+				xPercent: 50,
+			})
+		</script>
+	</body>
+</html>
