@@ -1,0 +1,475 @@
+@media screen and (max-width: 1360px) {
+	.header {
+		.nav {
+			&__list {
+				row-gap: 1.2rem;
+			}
+		}
+	}
+
+	.promo {
+		&__icons {
+			width: auto;
+			flex-direction: column;
+		}
+		&__icon {
+			i {
+				margin: 0;
+			}
+		}
+		&__img {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	.catalog {
+		&__content {
+			gap: 2rem;
+		}
+		&-item {
+			width: 31%;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.header {
+		.nav {
+			&__menu {
+				padding: 6rem 2rem 3rem 2rem;
+				width: 50%;
+			}
+			&__list {
+				row-gap: 0.7rem;
+			}
+			&__burger {
+				&:hover {
+					transform: translateY(-50%);
+				}
+			}
+		}
+	}
+
+	.button {
+		&:hover {
+			background-color: $main-color;
+		}
+		&_main {
+			span {
+				padding: 0;
+			}
+			i {
+				display: none;
+			}
+		}
+	}
+
+	.benefits {
+		&__subtitle {
+			font-size: 16px;
+		}
+	}
+
+	.catalog {
+		&__tab {
+			&:hover {
+				box-shadow: none;
+			}
+		}
+		&__content {
+			gap: 2.5rem;
+		}
+		&-item {
+			width: 30%;
+			&__new-price {
+				font-size: 17px;
+			}
+		}
+	}
+
+	.contacts {
+		&__left {
+			font-size: 32px;
+		}
+	}
+
+	.footer {
+		&-content {
+			&__logo {
+				&:hover {
+					color: $white-color;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.header {
+		position: fixed;
+		margin: 1.5rem 2.5rem;
+		padding: 1.5rem;
+		background-color: $white-color;
+		border-radius: 3rem;
+		&__logo {
+			color: $backg-color;
+		}
+		.nav {
+			&__burger {
+				padding-right: 1.5rem;
+			}
+		}
+	}
+	.promo {
+		grid-template-columns: 1fr;
+	}
+
+	.benefits {
+		&__wrapper {
+			flex-direction: column;
+			flex-wrap: nowrap;
+		}
+		&__subtitle {
+			font-size: 18px;
+		}
+	}
+
+	.carousel {
+		.slick-dots {
+			margin-top: 1.5rem;
+		}
+	}
+	.catalog {
+		&-item {
+			width: 47%;
+			margin-bottom: 0;
+			&__new-price {
+				font-size: 20px;
+			}
+		}
+	}
+
+	.contacts {
+		&__content {
+			flex-direction: column;
+			gap: 2rem;
+		}
+	}
+
+	.footer {
+		&__wrapper {
+			flex-direction: column;
+		}
+		&-content {
+			&__subtitle {
+				font-weight: 400;
+				margin-top: 0.2rem;
+			}
+			&__links {
+				margin-top: 1rem;
+				flex-direction: column;
+				gap: 0.8rem;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header {
+		&__logo {
+			img {
+				width: 60%;
+			}
+		}
+		.nav {
+			&__menu {
+				width: 100%;
+			}
+		}
+	}
+	.promo {
+		&__wrapper {
+			text-align: left;
+		}
+		&__header {
+			line-height: 50px;
+		}
+		&__subheader {
+			line-height: 26px;
+		}
+		&__icons {
+			width: 100%;
+		}
+		&__link {
+			margin-top: 1.4rem;
+			font-size: 14px;
+		}
+	}
+
+	.button {
+		&_main {
+			width: 100%;
+		}
+		&_catalog {
+			width: 300px;
+		}
+	}
+
+	.benefits {
+		&__item {
+			justify-content: center;
+			margin: 0 auto;
+		}
+	}
+
+	.title {
+		font-size: 28px;
+		&_left {
+			line-height: 38px;
+		}
+	}
+
+	.carousel {
+		.slick-slide img {
+			height: 300px;
+			object-fit: cover;
+		}
+	}
+
+	.catalog {
+		&-item {
+			width: 100%;
+			&__img {
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+
+	.contacts {
+		&__left {
+			font-size: 28px;
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.header {
+		margin: 1.5rem;
+		padding: 1rem;
+		border-radius: 1.5rem;
+		&__phone {
+			font-size: 15px;
+		}
+		&__contacts {
+			align-items: center;
+		}
+		.nav {
+			&__item {
+				width: 100%;
+			}
+			&__link {
+				font-size: 1.5rem;
+				font-weight: 400;
+			}
+		}
+	}
+
+	.button {
+		width: 145px;
+		height: 28px;
+		font-size: 10px;
+		&_main {
+			width: 100%;
+			height: 45px;
+			font-size: 12px;
+		}
+		&_submit {
+			width: 100%;
+			height: 45px;
+			font-size: 12px;
+		}
+		&_catalog {
+			width: 130px;
+		}
+		&_contacts {
+			width: 100%;
+			height: 45px;
+			font-size: 12px;
+		}
+	}
+
+	.promo {
+		margin: 1.5rem;
+		padding: 1rem;
+		border-radius: 1.5rem;
+		&__wrapper {
+			text-align: left;
+		}
+		&__header {
+			font-size: 26px;
+			line-height: 30px;
+		}
+		&__subheader {
+			font-size: 16px;
+			line-height: 18px;
+		}
+		&__icons {
+			margin-top: 1.875rem;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+		}
+		&__icon {
+			padding: 0.5rem;
+			line-height: 18px;
+		}
+		&__link {
+			margin-top: 1.25rem;
+			font-size: 13px;
+		}
+		&__img {
+			border-radius: 1rem;
+		}
+	}
+
+	.title {
+		font-size: 15px;
+		&_left {
+			line-height: 27px;
+		}
+	}
+
+	.benefits {
+		margin: 1.5rem;
+		&__item {
+			padding: 1rem;
+			border-radius: 1.5rem;
+		}
+		&__subtitle {
+			font-size: 14px;
+		}
+		&__descr {
+			font-size: 12px;
+		}
+	}
+
+	.consultation {
+		min-height: 500px;
+		margin: 1.5rem;
+		padding: 1rem;
+		border-radius: 1.5rem;
+		&__descr {
+			text-align: left;
+			line-height: 25px;
+			font-size: 14px;
+		}
+	}
+
+	.feed-form {
+		width: 100%;
+	}
+
+	.catalog {
+		margin: 1.5rem;
+		&__tabs {
+			padding-top: 1.875rem;
+			flex-direction: column;
+			row-gap: 1rem;
+		}
+		&__tab {
+			width: 100%;
+			font-size: 14px;
+		}
+		&-item {
+			border-radius: 1.5rem;
+			padding: 1rem;
+			&__img {
+				border-radius: 1rem;
+			}
+		}
+	}
+	.reviews {
+		min-height: 400px;
+		margin: 1.5rem;
+		&__card {
+			padding: 1rem;
+			border-radius: 1.5rem;
+		}
+		&__subtitle {
+			font-size: 14px;
+		}
+		&__descr {
+			font-size: 12px;
+		}
+	}
+
+	.contacts {
+		margin: 1.5rem 1.5rem 10rem;
+		&__content {
+			padding: 1rem;
+			border-radius: 1.5rem;
+		}
+		&__left {
+			font-size: 16px;
+			line-height: 24px;
+		}
+		&__right {
+			margin-bottom: 2rem;
+		}
+	}
+
+	.footer {
+		margin: 1.5rem;
+		&__wrapper {
+			flex-direction: column;
+		}
+		&-content {
+			&__logo {
+				font-size: 1.7rem;
+				i {
+					margin-bottom: 0.4rem;
+				}
+			}
+			&__subtitle {
+				font-size: 16px;
+			}
+			&__phone {
+				font-size: 16px;
+			}
+			&__email {
+				font-size: 16px;
+			}
+			&__links {
+				font-size: 16px;
+			}
+			&__info {
+				font-size: 16px;
+			}
+		}
+	}
+
+	.overlay {
+		.feed-form {
+			width: 250px;
+			input {
+				height: 45px;
+			}
+		}
+	}
+
+	.modal {
+		padding: 1rem;
+		border-radius: 1.5rem;
+		&__subtitle {
+			padding-top: 1rem;
+			&_call {
+				padding-top: 1.5rem;
+			}
+		}
+	}
+}

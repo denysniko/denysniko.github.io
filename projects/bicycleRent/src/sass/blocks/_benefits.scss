@@ -1,0 +1,49 @@
+.benefits {
+	min-height: 470px;
+	margin: 2.5rem;
+	padding: 2rem 0 2rem 0;
+	background-color: $backg-color;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 3.75rem;
+		gap: 2rem;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		background-color: $grey-color;
+		border-radius: 3rem;
+		padding: 2rem;
+	}
+	&__round {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		padding: 1rem;
+		background-color: $main-color;
+		i {
+			color: $white-color;
+		}
+	}
+	&__subtitle {
+		font-weight: 700;
+		font-size: 18px;
+		color: $white-color;
+		margin-top: 1rem;
+		margin-bottom: 1.25rem;
+		letter-spacing: 0.031rem;
+	}
+	&__descr {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 18px;
+		color: $white-color;
+	}
+}

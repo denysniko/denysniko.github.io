@@ -1,0 +1,113 @@
+.catalog {
+	min-height: 470px;
+	margin: 2.5rem;
+	padding: 2rem 0 2rem 0;
+	&__tabs {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		column-gap: 0.625rem;
+		padding-top: 3.125rem;
+		list-style: none;
+		margin-bottom: 0;
+	}
+	&__tab {
+		width: 220px;
+		height: 50px;
+		border: 1px solid $white-color;
+		border-radius: 3rem;
+		text-align: center;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 48px;
+		text-transform: uppercase;
+		color: #6b6b6b;
+		transition: 0.5s all;
+		letter-spacing: 0.031rem;
+		cursor: pointer;
+		&:hover {
+			box-shadow: 0px 5px 20px $main-color;
+			border: none;
+		}
+		&_active {
+			color: $white-color;
+			background-color: $main-color;
+			border: none;
+		}
+	}
+	&__content {
+		margin-top: 3.75rem;
+		display: none;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		row-gap: 1rem;
+		&_active {
+			display: flex;
+		}
+	}
+	&-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 2rem;
+		width: 300px;
+		min-height: 440px;
+		background-color: $grey-color;
+		border-radius: 2rem;
+		&__img {
+			border-radius: 1.5rem;
+			transition: 0.7s all;
+			max-width: 100%;
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+		&__subtitle {
+			padding-top: 0.938rem;
+			font-weight: 700;
+			font-size: 16px;
+			color: $orange-color;
+			letter-spacing: 0.031rem;
+		}
+		&__descr {
+			padding-top: 0.938rem;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 300;
+			font-size: 14px;
+			color: $white-color;
+		}
+		&__link {
+			display: block;
+			padding-top: 0.75rem;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 14px;
+			text-decoration: underline;
+			color: $main-color;
+			&:hover {
+				color: $main-color;
+			}
+		}
+		&__footer {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&__old-price {
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 14px;
+			text-decoration: line-through;
+			color: #6b6b6b;
+			letter-spacing: 0.031rem;
+		}
+		&__new-price {
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 20px;
+			color: $orange-color;
+			letter-spacing: 0.031rem;
+		}
+	}
+}

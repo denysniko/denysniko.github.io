@@ -1,0 +1,41 @@
+.contacts {
+	min-height: 600px;
+	margin: 2.5rem;
+	padding: 2rem 0 2rem 0;
+	&__wrapper {
+		margin-top: 3.125rem;
+	}
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		padding: 2rem;
+		background-color: $grey-color;
+		background-image: radial-gradient(
+			at 0% 100%,
+			hsla(6, 86%, 62%, 1) 0px,
+			transparent 40%
+		);
+		border-radius: 3rem;
+		color: $white-color;
+	}
+	&__left {
+		text-align: left;
+		font-size: 35px;
+		font-weight: 600;
+		line-height: 42px;
+		color: $white-color;
+		letter-spacing: 0.031rem;
+		span {
+			color: $orange-color;
+		}
+	}
+	.error {
+		border: 2px solid $main-color;
+	}
+	label.error {
+		border: none;
+		color: $orange-color;
+		font-family: 'Roboto', sans-serif;
+		font-size: 0.8rem;
+	}
+}

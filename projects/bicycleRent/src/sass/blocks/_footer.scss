@@ -1,0 +1,110 @@
+.footer {
+	margin: 2.5rem;
+	padding: 2rem 0 0;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	&-content {
+		&__logo {
+			display: flex;
+			align-items: center;
+			column-gap: 0.25rem;
+			font-size: 2rem;
+			color: $white-color;
+			text-decoration: none;
+			transition: 0.4s;
+			i {
+				margin-bottom: 0.5rem;
+			}
+			&:hover {
+				color: $main-color;
+			}
+		}
+		&__subtitle {
+			margin-top: 0.5rem;
+			font-size: 18px;
+			font-weight: 300;
+			color: $white-color;
+			letter-spacing: 0.031rem;
+		}
+		&__phone {
+			display: flex;
+			margin-top: 0.5rem;
+			align-items: center;
+			column-gap: 0.3rem;
+			color: $white-color;
+			font-size: 18px;
+			font-weight: 300;
+		}
+		&__email {
+			display: flex;
+			align-items: center;
+			column-gap: 0.3rem;
+			color: $white-color;
+			font-size: 18px;
+			font-weight: 300;
+		}
+		&__links {
+			display: flex;
+			gap: 2rem;
+			font-size: 17px;
+			font-weight: 300;
+			letter-spacing: 0.031rem;
+			a {
+				position: relative;
+				color: $white-color;
+				text-decoration: none;
+				&::before {
+					content: '';
+					position: absolute;
+					display: block;
+					height: 2px;
+					width: 0;
+					left: 0;
+					bottom: -4px;
+					background: $main-color;
+					transition: width 0.5s ease-out;
+				}
+				&:hover::before {
+					width: 100%;
+				}
+			}
+			li {
+				list-style: none;
+			}
+		}
+		&__bottom {
+			width: 100%;
+			margin-top: 1rem;
+			hr {
+				color: $white-color;
+			}
+		}
+		&__info {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-size: 17px;
+			font-weight: 300;
+			p {
+				color: $white-color;
+			}
+		}
+		&__social {
+			ul {
+				display: flex;
+				gap: 1rem;
+				a {
+					color: $white-color;
+					transition: 0.4s;
+					&:hover {
+						color: $main-color;
+					}
+				}
+			}
+		}
+	}
+}

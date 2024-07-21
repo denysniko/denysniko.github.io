@@ -1,0 +1,29 @@
+.consultation {
+	min-height: 700px;
+	margin: 2.5rem;
+	padding: 2rem;
+	background-color: $grey-color;
+	background-image: radial-gradient(
+			at 100% 100%,
+			hsla(6, 86%, 62%, 1) 0px,
+			transparent 50%
+		),
+		radial-gradient(at 0% 100%, hsla(240, 5%, 16%, 1) 0px, transparent 50%);
+	border-radius: 3rem;
+	&__descr {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 30px;
+		color: $white-color;
+	}
+	.error {
+		border: 2px solid $main-color;
+	}
+	label.error {
+		border: none;
+		color: $orange-color;
+		font-family: 'Roboto', sans-serif;
+		font-size: 0.8rem;
+	}
+}

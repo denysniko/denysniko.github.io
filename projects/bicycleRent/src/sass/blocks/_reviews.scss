@@ -1,0 +1,53 @@
+.reviews {
+	min-height: 500px;
+	margin: 2.5rem;
+	padding: 2rem 0 2rem 0;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 3.75rem;
+	}
+	&__card {
+		position: relative;
+		width: 310px;
+		height: auto;
+		padding: 2rem;
+		background: hsl(240, 8%, 9%);
+		border-radius: 3rem;
+		color: $white-color;
+		overflow: hidden;
+	}
+	&__shape {
+		background-color: hsla(32, 100%, 51%, 0.5);
+		border-radius: 50%;
+		filter: blur(110px);
+		&_small {
+			position: absolute;
+			top: -2.5rem;
+			left: -2.5rem;
+			width: 130px;
+			height: 130px;
+			filter: blur(64px);
+		}
+	}
+	&__subtitle {
+		font-weight: 700;
+		font-size: 18px;
+		color: $main-color;
+		margin-top: 1rem;
+		margin-bottom: 0.9rem;
+		letter-spacing: 0.031rem;
+	}
+	&__descr {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.swiper-pagination-bullet {
+		background-color: $white-color;
+		&-active {
+			background-color: $orange-color;
+		}
+	}
+}
