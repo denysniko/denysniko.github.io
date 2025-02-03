@@ -1,0 +1,70 @@
+@use '../base/var' as *;
+
+.pricing {
+	padding-top: 7.5rem;
+	&__wrapper {
+		margin-top: 3.75rem;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+		.second {
+			.btn {
+				color: $white-color;
+				background-color: $second-color;
+				&:hover {
+					background: $main-color;
+				}
+			}
+			svg {
+				color: $white-color;
+			}
+		}
+	}
+	&__card {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		min-height: 450px;
+		padding: 2rem 1.5rem;
+		border: 1.5px solid $second-color;
+		border-radius: 0.5rem;
+		transition: 0.4s ease-in-out;
+		&:hover {
+			border: 1.5px solid $main-color;
+		}
+		&-title {
+			font-size: 1.5rem;
+		}
+		&-subtitle {
+			color: $second-color;
+			font-family: 'Raleway', sans-serif;
+			margin-bottom: 2rem;
+		}
+	}
+	&__btn {
+		text-align: center;
+		color: $white-color;
+		text-decoration: none;
+		&:hover {
+			background: $second-color;
+		}
+	}
+	&__text {
+		margin: 2rem 0;
+		font-family: 'Raleway', sans-serif;
+		font-size: 0.9rem;
+		letter-spacing: 0.02rem;
+		line-height: 1.3rem;
+	}
+	&__list {
+		font-family: 'Raleway', sans-serif;
+		font-size: 0.8rem;
+		list-style: none;
+		line-height: 2rem;
+		svg {
+			color: $main-color;
+			margin-right: 0.3rem;
+			vertical-align: text-bottom;
+		}
+	}
+}

@@ -1,0 +1,410 @@
+@use '../base/mixins' as *;
+@use '../base/var' as *;
+
+@media screen and (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.header {
+		padding: 1rem;
+	}
+	.title {
+		&_fs5rem {
+			font-size: 4rem;
+		}
+	}
+	.hero {
+		&__text {
+			top: 20px;
+		}
+	}
+	.about {
+		&__wrapper {
+			grid-template-columns: 1fr 1fr;
+			column-gap: 2.5rem;
+		}
+		&__skills {
+			grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
+			column-gap: 1.25rem;
+			&-item {
+				grid-template-columns: 40px 195px;
+				column-gap: 1rem;
+			}
+		}
+		&__text {
+			width: 500px;
+		}
+	}
+	.portfolio {
+		&__wrapper {
+			grid-template-columns: repeat(auto-fit, 280px);
+			grid-auto-rows: 280px;
+			justify-content: space-around;
+			row-gap: 2.188rem;
+			.vertical,
+			.horizontal {
+				grid-row: unset;
+				grid-column: unset;
+			}
+		}
+		&__item {
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.contacts {
+		&__wrapper {
+			grid-template-columns: 350px 590px;
+			justify-content: space-between;
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.container {
+		max-width: 720px;
+	}
+	.header {
+		padding: 1.5rem;
+	}
+	.title {
+		&_fs5rem {
+			font-size: 3rem;
+		}
+	}
+	.menu {
+		&__link {
+			padding-bottom: 1.2rem;
+			font-size: 2.5rem;
+			&::before {
+				content: none;
+			}
+			&:hover {
+				transform: none;
+				&::before {
+					background-color: transparent;
+				}
+			}
+		}
+	}
+	.hero {
+		&__wrapper {
+			padding-top: 5rem;
+		}
+		&__title {
+			&_right {
+				margin: 0;
+			}
+		}
+	}
+	.about {
+		&__img {
+			img {
+				height: 300px;
+			}
+		}
+		&__skills {
+			grid-template-columns: 380px;
+			grid-auto-rows: minmax(115px, auto);
+			&-item {
+				grid-template-columns: 40px 1fr;
+				column-gap: 1.25rem;
+			}
+		}
+		&__text {
+			width: 380px;
+			font-size: 0.9rem;
+		}
+	}
+	.marquee {
+		padding: 1.8rem 0;
+		font-size: 2rem;
+	}
+	.services {
+		&__wrapper {
+			grid-template-columns: repeat(2, 1fr);
+			// grid-template-rows: 1fr;
+		}
+	}
+	.pricing {
+		&__wrapper {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	.contacts {
+		&__wrapper {
+			grid-template-columns: 1fr;
+		}
+		&__form {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: 540px;
+	}
+	.title {
+		letter-spacing: 0.02rem;
+		&_fs125rem {
+			font-size: 1.1rem;
+		}
+	}
+	.header {
+		padding: 1.2rem;
+	}
+	.menu {
+		&__link {
+			padding-bottom: 0.9rem;
+			font-size: 2rem;
+		}
+		&__list {
+			padding-left: 0;
+		}
+		&__email {
+			padding-left: 0;
+			a {
+				font-size: 0.8rem;
+			}
+		}
+	}
+	.btn {
+		&:hover {
+			background: $main-color;
+		}
+	}
+	.hero {
+		&__wrapper {
+			padding-top: 10rem;
+		}
+		&__circle {
+			display: none;
+		}
+		&__text {
+			display: none;
+		}
+		&__bottom {
+			position: absolute;
+			bottom: 40px;
+			left: 50%;
+			transform: translateX(-50%);
+			justify-content: center;
+			li {
+				a {
+					font-size: 0.9rem;
+				}
+			}
+		}
+	}
+	.about {
+		padding-top: 4rem;
+		&__wrapper {
+			grid-template: 400px auto auto / 1fr;
+		}
+		&__img {
+			img {
+				height: 540px;
+			}
+		}
+		&__skills {
+			grid-template-columns: repeat(2, 260px);
+		}
+		&__text {
+			width: 100%;
+		}
+	}
+	.portfolio-slidebar {
+		&__wrapper {
+			width: 5000px;
+			padding: 10rem 2rem;
+			gap: 4.25rem;
+		}
+	}
+	.quotation {
+		&__text {
+			font-size: 1.5rem;
+			letter-spacing: 0.02rem;
+		}
+	}
+	.gallery {
+		&__wrapper {
+			grid-template-columns: repeat(2, 1fr);
+			grid-auto-rows: minmax(150px, auto);
+			.horizontal-1 {
+				grid-area: 1 / 1 / 2 / 2;
+			}
+			.horizontal-2 {
+				grid-area: 5 / 1 / 6 / 3;
+			}
+			.vertical {
+				grid-area: auto / auto / auto / auto;
+				height: 150px;
+			}
+		}
+		&__img {
+			height: 150px;
+		}
+	}
+	.pricing {
+		&__wrapper {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	.contacts {
+		padding-top: 7.5rem;
+		&__email {
+			margin-top: 2rem;
+			font-size: 1rem;
+		}
+		&__socials {
+			margin: 1.25rem 0;
+			li {
+				a {
+					font-size: 0.9rem;
+				}
+			}
+		}
+	}
+	.footer {
+		&__wrapper {
+			flex-direction: column;
+			gap: 2rem;
+		}
+		&__links {
+			flex-direction: column;
+			gap: 1rem;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.container {
+		width: 100%;
+		padding-left: 0.625rem;
+		padding-right: 0.625rem;
+	}
+	.header {
+		padding: 0.7rem;
+	}
+	.logo {
+		font-size: 1.2rem;
+	}
+	.title {
+		&_fs5rem {
+			font-size: 1.7rem;
+			line-height: 2.5rem;
+			text-align: center;
+		}
+		&_fs2rem {
+			font-size: 1.2rem;
+		}
+	}
+	.hero {
+		&__buttons {
+			margin-top: 2rem;
+		}
+		&__title {
+			&_right {
+				text-align: center;
+			}
+		}
+	}
+	.menu {
+		height: 100dvh;
+		&__close {
+			top: 5px;
+			right: 5px;
+		}
+		&__block {
+			width: 100%;
+			padding-left: 1.5rem;
+		}
+	}
+	.about {
+		&__wrapper {
+			grid-template: 320px auto auto / 1fr;
+		}
+		&__img {
+			img {
+				height: 100%;
+			}
+		}
+		&__skills {
+			grid-template-columns: 1fr;
+		}
+	}
+	.marquee {
+		padding: 1.5rem 0;
+		font-size: 1.5rem;
+	}
+	.services {
+		&__wrapper {
+			grid-template: repeat(5, 1fr) / 1fr;
+			.first {
+				grid-row: 1 / 3;
+			}
+			.third {
+				grid-row: 3 / 5;
+			}
+		}
+		&__item {
+			&-title {
+				font-size: 1.2rem;
+			}
+		}
+	}
+	.quotation {
+		blockquote {
+			padding: 3rem;
+		}
+		&__text {
+			font-size: 1.2rem;
+			line-height: 1.5rem;
+		}
+	}
+	.gallery {
+		&__wrapper {
+			grid-template-columns: 1fr;
+			gap: 1rem;
+			.horizontal-1 {
+				grid-area: unset;
+			}
+			.horizontal-2 {
+				grid-area: unset;
+			}
+			.vertical {
+				grid-area: unset;
+				height: 100%;
+			}
+		}
+		&__img {
+			height: 100%;
+		}
+	}
+	.pricing {
+		&__card {
+			&-subtitle {
+				font-size: 2rem;
+			}
+		}
+	}
+	.contacts {
+		&__form {
+			grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+		}
+		&__textarea {
+			grid-column: unset;
+			width: 100%;
+		}
+		&__triggers {
+			grid-column: unset;
+			grid-template-columns: 1fr;
+			column-gap: unset;
+			row-gap: 1.25rem;
+		}
+	}
+}

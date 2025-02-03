@@ -1,0 +1,29 @@
+@use '../base/var' as *;
+
+.portfolio-slidebar {
+	padding-top: 7.5rem;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	&__wrapper {
+		// position: absolute;
+		// top: 0;
+		width: 8000px;
+		padding: 10rem 37.5rem;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		gap: 6.25rem;
+	}
+}
+
+.slide {
+	width: 400px;
+	height: 500px;
+	border-radius: 0.5rem;
+	background-color: $white-color;
+	img {
+		width: 100%;
+		border-radius: 0.5rem;
+	}
+}
