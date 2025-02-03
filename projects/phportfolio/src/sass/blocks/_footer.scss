@@ -1,0 +1,76 @@
+@use '../base/var' as *;
+
+.footer {
+	margin-top: 2rem;
+	border-top: 1px solid $second-color;
+	padding: 5rem 0 3rem 0;
+	&__wrapper {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__links {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
+	}
+	&__link {
+		list-style: none;
+		a {
+			font-family: 'Raleway', sans-serif;
+			color: $white-color;
+			text-decoration: none;
+		}
+		&:hover {
+			animation: turn 0.3s ease-in-out both;
+		}
+	}
+	&__backtop {
+		a {
+			font-family: 'Raleway', sans-serif;
+			color: $white-color;
+			text-decoration: none;
+		}
+		&:hover {
+			animation: turn 0.3s ease-in-out both;
+		}
+	}
+	&__cellar {
+		width: 100%;
+		margin-top: 1.5rem;
+		text-align: center;
+		p {
+			font-family: 'Raleway', sans-serif;
+			font-size: 0.75rem;
+		}
+	}
+}
+
+.logo {
+	font-size: 1.5rem;
+}
+
+@keyframes turn {
+	0% {
+		transform: rotate(0deg) translate3d(0, 0, 0);
+	}
+
+	25% {
+		transform: rotate(5deg) translate3d(0, 0, 0);
+	}
+
+	50% {
+		transform: rotate(-5deg) translate3d(0, 0, 0);
+	}
+
+	75% {
+		transform: rotate(1deg) translate3d(0, 0, 0);
+	}
+
+	100% {
+		transform: rotate(0deg) translate3d(0, 0, 0);
+	}
+}

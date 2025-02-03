@@ -1,0 +1,22 @@
+@use '../base/var' as *;
+
+.marquee {
+	position: relative;
+	background-color: $main-color;
+	padding: 2rem 0;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	overflow: hidden;
+	&__inside {
+		display: flex;
+		width: fit-content;
+		flex: auto;
+		flex-direction: row;
+	}
+	&__part {
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
+		padding: 0 0.313rem;
+	}
+}
